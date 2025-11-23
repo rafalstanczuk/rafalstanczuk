@@ -7,9 +7,32 @@
 
 **Android Developer | AI Enthusiast | Outdoor Enthusiast**
 
+<div align="center">
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://pl.linkedin.com/in/stanczuk)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafalstanczuk)
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)](https://bitbucket.org/karambapl/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/k4r4m84)
+
+</div>
+
+---
+
+## 📫 Connect With Me
+
+- **LinkedIn**: [in/stanczuk](https://pl.linkedin.com/in/stanczuk)
+- **GitHub**: [@rafalstanczuk](https://github.com/rafalstanczuk)
+- **Bitbucket**: [karambapl](https://bitbucket.org/karambapl/)
+- **Instagram**: [@k4r4m84](https://instagram.com/k4r4m84)
+
+### ☕ Support My Work
+
+If you find my projects helpful or interesting, consider supporting my work:
+
+- [Buy Me a Coffee](https://buymeacoffee.com/k4r4m84)
+- [Buy Coffee](https://buycoffee.to/k4r4m84)
+
+---
 
 Hello! I'm a passionate **Android Developer** with over **13 years of professional experience** in the IT industry. My programming journey began in **2000-2001**, and I specialize in building robust, scalable mobile applications with a focus on **clean architecture**, **MVVM**, and **modern Android development practices**.
 
@@ -167,16 +190,6 @@ My programming journey started in **2000-2001**, and these early projects repres
 **Outdoor Enthusiast**
 
 My passion for outdoor activities often inspires my technical projects, especially those related to geospatial analysis and activity tracking.
-
----
-
-## 📫 Connect With Me
-
-- **LinkedIn**: [in/stanczuk](https://pl.linkedin.com/in/stanczuk)
-- **GitHub**: [@rafalstanczuk](https://github.com/rafalstanczuk)
-- **Bitbucket**: [karambapl](https://bitbucket.org/karambapl/)
-- **Instagram**: [@k4r4m84](https://instagram.com/k4r4m84)
-- **Buy Me a Coffee**: [buymeacoffee.com/k4r4m84](https://buymeacoffee.com/k4r4m84)
 
 ---
 
