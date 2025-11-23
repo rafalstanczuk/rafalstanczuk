@@ -5,7 +5,7 @@
 
 # 👋 Hi, I'm Rafał Stańczuk
 
-**Android Developer | AI Enthusiast | Outdoor Enthusiast**
+Android Developer | AI Enthusiast | Outdoor Enthusiast
 
 <div align="center">
 
@@ -13,9 +13,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafalstanczuk) 
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)](https://bitbucket.org/karambapl/) 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/k4r4m84)
-
-[![GitHub Followers](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/rafalstanczuk&query=$.followers&label=GitHub%20Followers&logo=github&logoColor=white&color=181717&style=for-the-badge)](https://github.com/rafalstanczuk)
-[![GitHub Profile Views](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/rafalstanczuk&query=$.public_repos&label=Public%20Repos&logo=github&logoColor=white&color=181717&style=for-the-badge)](https://github.com/rafalstanczuk?tab=repositories)
 
 </div>
 
