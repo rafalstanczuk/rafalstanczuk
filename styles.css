@@ -39,6 +39,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 /* Navigation */
@@ -334,17 +335,99 @@ body {
 .hero::before {
     content: '';
     position: absolute;
-    top: -10%;
-    left: 0;
-    right: 0;
-    height: 40%;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 50%;
     background-image: url('developer_topbar_transparent.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
-    opacity: 0.2;
+    opacity: 0.35;
     z-index: 0;
     pointer-events: none;
+    filter: drop-shadow(0 0 30px rgba(96, 165, 250, 0.3)) drop-shadow(0 0 60px rgba(52, 211, 153, 0.2));
+    animation: topbar-float 8s ease-in-out infinite, topbar-glow 4s ease-in-out infinite;
+}
+
+/* Blurred background layer for depth */
+.hero .container::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 50%;
+    background-image: url('developer_topbar_transparent.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(20px);
+    animation: topbar-blur-pulse 6s ease-in-out infinite;
+}
+
+/* Gradient overlay for atmosphere */
+.hero .container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at 50% 10%, rgba(96, 165, 250, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 15%, rgba(52, 211, 153, 0.1) 0%, transparent 45%);
+    z-index: 1;
+    pointer-events: none;
+    animation: gradient-shift 10s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+
+@keyframes topbar-float {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 0.35;
+    }
+    50% {
+        transform: translateX(-50%) translateY(-15px) scale(1.02);
+        opacity: 0.4;
+    }
+}
+
+@keyframes topbar-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 30px rgba(96, 165, 250, 0.3)) drop-shadow(0 0 60px rgba(52, 211, 153, 0.2));
+    }
+    50% {
+        filter: drop-shadow(0 0 40px rgba(96, 165, 250, 0.5)) drop-shadow(0 0 80px rgba(52, 211, 153, 0.4)) drop-shadow(0 0 100px rgba(147, 51, 234, 0.2));
+    }
+}
+
+@keyframes topbar-blur-pulse {
+    0%, 100% {
+        opacity: 0.1;
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        opacity: 0.15;
+        transform: translateX(-50%) scale(1.05);
+    }
 }
 
 .hero-content {
