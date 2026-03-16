@@ -1,0 +1,13 @@
+## Colleagues
+colleague_ios_ml_engineer_2024.png
+colleague_senior_ios_dev_2024.png
+colleague_android_engineer_2018.png
+colleague_it_expert_2018.png
+
+## Managers & Clients
+manager_senior_po_inelo_2018.png
+client_rd_team_manager_2020.png
+
+## Mentorship
+mentee_angular_developer_2025.png
+recruiter_talent_acquisition_2018.png
