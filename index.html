@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rafal Stanczuk - Senior Android Engineer with 14+ years experience. AOSP, IoT/BLE, healthcare, automotive, sensor fusion, and AI integration. Available for B2B contracts. Warsaw, Poland / Remote.">
+    <meta name="description" content="Rafal Stanczuk - Senior Android Engineer with 14+ years experience. Creator of Briskwire (offline QR/NFC file transfer) and GpxAnalyzer. AOSP, IoT/BLE, healthcare, automotive, sensor fusion, and AI integration. Available for B2B contracts. Warsaw, Poland / Remote.">
     <title>Rafal Stanczuk - Senior Android Engineer | AOSP, IoT, Healthcare, AI | 14+ Years</title>
 
     <!-- SEO -->
     <link rel="canonical" href="https://rafalstanczuk.github.io/rafalstanczuk/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, noai, noimageai">
-    <meta name="keywords" content="Rafal Stanczuk, Android developer, senior Android engineer, AOSP, Android Automotive, IoT, BLE, healthcare apps, sensor fusion, Kotlin, Java, JNI, C++, AI engineer, LLM, clean architecture, B2B contractor, Poland, remote">
+    <meta name="keywords" content="Rafal Stanczuk, Android developer, senior Android engineer, AOSP, Android Automotive, IoT, BLE, NFC, QR code, barcode, healthcare apps, sensor fusion, Kotlin, Java, JNI, C++, AI engineer, LLM, clean architecture, offline-first, fountain coding, CameraX, Briskwire, GpxAnalyzer, B2B contractor, Poland, remote">
     <meta name="author" content="Rafał Stańczuk">
 
     <!-- Favicon and App Icons -->
@@ -49,7 +49,7 @@
         "https://github.com/rafalstanczuk",
         "https://bitbucket.org/stanczuk/"
       ],
-      "knowsAbout": ["Android Development", "AOSP", "Android Automotive", "Kotlin", "Java", "C++", "JNI", "IoT", "BLE", "Sensor Fusion", "AI/LLM Integration", "Clean Architecture", "Healthcare Apps", "Signal Processing", "CAN Bus", "Dead Reckoning", "Indoor Positioning"],
+      "knowsAbout": ["Android Development", "AOSP", "Android Automotive", "Kotlin", "Java", "C++", "JNI", "IoT", "BLE", "NFC", "QR Code Encoding", "Barcode Scanning", "Fountain Coding", "Erasure Codes", "CameraX", "Computer Vision", "Sensor Fusion", "AI/LLM Integration", "Clean Architecture", "Healthcare Apps", "Signal Processing", "CAN Bus", "Dead Reckoning", "Indoor Positioning", "Offline-First Architecture", "Privacy by Design"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Czestochowa University of Technology"
@@ -124,7 +124,7 @@
                     </div>
                     <h1 class="hero-title">Rafal Stanczuk</h1>
                     <p class="hero-tagline">Senior Android Engineer &middot; AOSP &middot; Sensor Fusion &middot; IoT &middot; AI</p>
-                    <p class="hero-subtitle">14+ years shipping production Android apps across healthcare, automotive AOSP, industrial IoT, and sensor fusion R&D. Master of Computer Science. Deep expertise in embedded Android, BLE/NFC protocols, signal processing, and AI/LLM integration.</p>
+                    <p class="hero-subtitle">14+ years shipping production Android apps across healthcare, automotive AOSP, industrial IoT, and sensor fusion R&D. Master of Computer Science. Deep expertise in embedded Android, BLE/NFC protocols, QR/barcode &amp; computer vision pipelines, signal processing, and AI/LLM integration. Creator of <a href="#projects" class="hero-subtitle-link">Briskwire</a> &amp; <a href="#projects" class="hero-subtitle-link">GpxAnalyzer</a> on Google Play.</p>
                     <div class="hero-availability">
                         <span class="availability-badge">Available for B2B contracts</span>
                         <span class="availability-detail">Remote from Poland &middot; Open to EU on-site</span>
@@ -212,6 +212,20 @@
                     </div>
                     <div class="feature-card fade-in-up">
                         <div class="feature-icon">
+                            <img src="icons/qr_code_scanner.svg" alt="" class="icon-svg" aria-hidden="true">
+                        </div>
+                        <h3>QR / NFC &amp; Computer Vision</h3>
+                        <ul>
+                            <li>Real-time camera barcode pipelines: QR, Aztec, Data Matrix, Code 39/93/128, EAN, UPC</li>
+                            <li>QR code generation with Reed&ndash;Solomon error correction &amp; version management</li>
+                            <li>Proprietary <strong>RGB channel-stacked</strong> QR encoding for ~3&times; payload density</li>
+                            <li>NFC peer-to-peer file transfer (back-to-back tap)</li>
+                            <li>Fountain coding / erasure codes for lossy-channel retransmission resilience</li>
+                            <li>Offline-first, zero-permission architecture (no internet, no cloud, no trackers)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
                             <img src="icons/terrain.svg" alt="" class="icon-svg" aria-hidden="true">
                         </div>
                         <h3>Geospatial & Signal Processing</h3>
@@ -235,6 +249,38 @@
                     <p>Production apps, tools, and open source contributions</p>
                 </div>
 
+                <!-- Briskwire Hero Project -->
+                <div class="project-hero fade-in-up">
+                    <div class="project-hero-content">
+                        <div class="project-hero-icon">
+                            <img src="icons/briskwire-launcher.svg" alt="Briskwire" width="80" height="80">
+                        </div>
+                        <div class="project-hero-text">
+                            <h3>Briskwire&trade;</h3>
+                            <p class="project-hero-label">File Transfer Through the Air &mdash; Literally</p>
+                            <p>Offline-first Android file transfer for places where networks fail &mdash; mountains, planes, secure facilities, underground. Files are sliced into a stream of sequential QR codes (or NFC taps) and reassembled live by the receiver&rsquo;s camera. Includes a universal barcode scanner (QR, Aztec, Code 39/93/128, Data Matrix, EAN-8/13, UPC-A/E) with smart Android Intent handoffs, a proprietary <strong>RGB channel-stacked QR</strong> mode that packs ~3&times; the payload per frame, and <strong>fountain-coding retransmission</strong> for resilience against missed frames and color bleed. Zero internet permission &mdash; the app literally cannot go online &mdash; zero accounts, zero trackers; GDPR/CCPA-clean by design.</p>
+                            <div class="project-hero-stats">
+                                <span class="hero-stat"><strong>0</strong> Internet Access</span>
+                                <span class="hero-stat"><strong>0</strong> Trackers / Ads</span>
+                                <span class="hero-stat"><strong>0</strong> Accounts</span>
+                                <span class="hero-stat"><strong>100%</strong> On-Device</span>
+                                <span class="hero-stat"><strong>~3&times;</strong> Density (RGB)</span>
+                                <span class="hero-stat"><strong>7</strong> Speed Presets</span>
+                                <span class="hero-stat"><strong>5</strong> Languages</span>
+                                <span class="hero-stat"><strong>Android 11+</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-hero-links">
+                        <a href="https://play.google.com/store/apps/details?id=app.briskwire" class="google-play-badge-link" target="_blank" rel="noopener" aria-label="Get Briskwire on Google Play">
+                            <img src="icons/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" class="google-play-badge" width="180" height="54">
+                        </a>
+                        <a href="https://briskwire.github.io/" target="_blank" rel="noopener" class="project-website-link">
+                            Project Website
+                        </a>
+                    </div>
+                </div>
+
                 <!-- GpxAnalyzer Hero Project -->
                 <div class="project-hero fade-in-up">
                     <div class="project-hero-content">
@@ -244,7 +290,7 @@
                         <div class="project-hero-text">
                             <h3>GpxAnalyzer</h3>
                             <p class="project-hero-label">Research-Grade GPS Analysis in Your Pocket</p>
-                            <p>Wavelet-based signal processing, synchronized multi-chart visualization, route drawing with elevation profiles, and Strava sync — all running locally on your Android device. Built as a 17-module Kotlin/Java clean architecture project with Dagger Hilt, RxJava reactive pipelines, and L1/L2/L3 multi-level caching.</p>
+                            <p>Wavelet-based signal processing, synchronized multi-chart visualization, route drawing with elevation profiles, and Strava sync &mdash; all running locally on your Android device. Built as a 17-module Kotlin/Java clean architecture project with Dagger Hilt, RxJava reactive pipelines, and L1/L2/L3 multi-level caching.</p>
                             <div class="project-hero-stats">
                                 <span class="hero-stat"><strong>100%</strong> On-Device</span>
                                 <span class="hero-stat"><strong>10K+</strong> Trackpoints</span>
@@ -256,7 +302,7 @@
                         </div>
                     </div>
                     <div class="project-hero-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.rafalstanczuk.gpxanalyzer" class="google-play-badge-link" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+                        <a href="https://play.google.com/store/apps/details?id=com.rafalstanczuk.gpxanalyzer" class="google-play-badge-link" target="_blank" rel="noopener" aria-label="Get GpxAnalyzer on Google Play">
                             <img src="icons/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" class="google-play-badge" width="180" height="54">
                         </a>
                         <a href="https://rafalstanczuk.github.io/gpxanalyzer/" target="_blank" rel="noopener" class="project-website-link">
@@ -353,10 +399,27 @@
                             <span class="skill-pill">Retrofit2</span>
                             <span class="skill-pill">Navigation</span>
                             <span class="skill-pill">Data Binding</span>
+                            <span class="skill-pill">CameraX</span>
                             <span class="skill-pill">BLE</span>
-                            <span class="skill-pill">NFC</span>
+                            <span class="skill-pill">NFC P2P</span>
+                            <span class="skill-pill">Intents / Deep Links</span>
                             <span class="skill-pill">NDK / JNI</span>
                             <span class="skill-pill">OpenGL</span>
+                        </div>
+                    </div>
+                    <div class="skill-group fade-in-up">
+                        <h3>QR / Barcode &amp; Computer Vision</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill skill-primary">QR Encoding / Decoding</span>
+                            <span class="skill-pill">Aztec</span>
+                            <span class="skill-pill">Data Matrix</span>
+                            <span class="skill-pill">Code 39 / 93 / 128</span>
+                            <span class="skill-pill">EAN / UPC</span>
+                            <span class="skill-pill">Reed&ndash;Solomon ECC</span>
+                            <span class="skill-pill skill-primary">RGB Channel Stacking</span>
+                            <span class="skill-pill skill-primary">Fountain Coding</span>
+                            <span class="skill-pill">Erasure Codes</span>
+                            <span class="skill-pill">Real-time Camera Pipelines</span>
                         </div>
                     </div>
                     <div class="skill-group fade-in-up">
@@ -370,6 +433,19 @@
                             <span class="skill-pill">Graph DBs</span>
                             <span class="skill-pill">Multimodal AI</span>
                             <span class="skill-pill">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skill-group fade-in-up">
+                        <h3>Architecture &amp; Privacy</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill skill-primary">Offline-First</span>
+                            <span class="skill-pill">Zero-Permission Design</span>
+                            <span class="skill-pill">GDPR / CCPA Compliance</span>
+                            <span class="skill-pill">On-Device Processing</span>
+                            <span class="skill-pill">i18n (5 languages)</span>
+                            <span class="skill-pill">File Compression</span>
+                            <span class="skill-pill">Session Persistence</span>
+                            <span class="skill-pill">CSV Export</span>
                         </div>
                     </div>
                     <div class="skill-group fade-in-up">
@@ -410,7 +486,7 @@
                                 <span class="timeline-date">2024 &ndash; Present</span>
                                 <div class="timeline-content">
                                     <strong>Independent R&D &amp; Portfolio Development</strong>
-                                    <p>GpxAnalyzer on Google Play (17-module clean architecture, 1,119+ tests). RPi sensor fusion &amp; mesh WiFi research. AI agent development. Mobile developer mentoring.</p>
+                                    <p>Two original Android apps shipped to Google Play: <strong>Briskwire&trade;</strong> (offline QR/NFC file transfer, RGB channel-stacked encoding, fountain-coding retransmission, zero-permission privacy-by-design) and <strong>GpxAnalyzer</strong> (17-module clean architecture, 1,119+ tests). RPi sensor fusion &amp; mesh WiFi research. AI agent development. Mobile developer mentoring.</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
@@ -503,7 +579,8 @@
                     <div class="career-current fade-in-up">
                         <h3>Currently</h3>
                         <ul>
-                            <li>Building and shipping GpxAnalyzer on Google Play (17 modules, 1,119+ tests, full CI/CD)</li>
+                            <li>Shipping <strong>Briskwire&trade;</strong> on Google Play &mdash; offline QR/NFC file transfer with proprietary RGB channel-stacked encoding and fountain-coding retransmission, fully on-device with zero internet permission</li>
+                            <li>Building and shipping <strong>GpxAnalyzer</strong> on Google Play (17 modules, 1,119+ tests, full CI/CD)</li>
                             <li>Raspberry Pi R&D: sensor fusion, dead reckoning, mesh WiFi positioning, CAN bus integration</li>
                             <li>AI agent development with Claude Code, OpenAI, and Ollama</li>
                             <li>Mentoring mobile developers and beta-testing non-profit apps</li>
@@ -552,6 +629,33 @@
                 <div class="research-grid fade-in-up">
                     <div class="feature-card">
                         <div class="feature-icon">
+                            <img src="icons/qr_code_scanner.svg" alt="" class="icon-svg" aria-hidden="true">
+                        </div>
+                        <h3>Briskwire&trade; &mdash; Offline Air-Gap File Transfer</h3>
+                        <ul>
+                            <li>Files sliced into sequential QR / NFC streams &mdash; reassembled by the receiver&rsquo;s camera</li>
+                            <li>Proprietary <strong>RGB channel-stacked QR</strong> mode &mdash; ~3&times; the payload of a plain QR per frame</li>
+                            <li>Fountain-coding-style retransmission to survive missed frames and RGB color bleed</li>
+                            <li>Universal scanner: QR, Aztec, Data Matrix, Code 39/93/128, EAN, UPC with smart Intent handoffs</li>
+                            <li>Zero internet permission &mdash; the app literally can&rsquo;t go online; no accounts, no trackers</li>
+                            <li><a href="https://play.google.com/store/apps/details?id=app.briskwire" target="_blank" rel="noopener">Live on Google Play</a> &middot; <a href="https://briskwire.github.io/" target="_blank" rel="noopener">briskwire.github.io</a></li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="icons/phone_android.svg" alt="" class="icon-svg" aria-hidden="true">
+                        </div>
+                        <h3>GpxAnalyzer &mdash; Ongoing Development</h3>
+                        <ul>
+                            <li>17-module clean architecture with 1,119+ unit tests</li>
+                            <li>Custom DSP pipeline: wavelet denoising, FFT, adaptive windowing</li>
+                            <li>Strava OAuth2 integration with smart rate limiting</li>
+                            <li>Full CI/CD via GitHub Actions &mdash; automated testing and release</li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.rafalstanczuk.gpxanalyzer" target="_blank" rel="noopener">Live on Google Play</a></li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <img src="icons/developer_mode.svg" alt="" class="icon-svg" aria-hidden="true">
                         </div>
                         <h3>Raspberry Pi Sensor Fusion Platform</h3>
@@ -561,19 +665,6 @@
                             <li>CAN bus integration via PiCAN HAT for automotive prototyping</li>
                             <li>Building on 2.5 years of Samsung indoor positioning R&D</li>
                             <li>Targeting sub-5m accuracy in GPS-denied environments</li>
-                        </ul>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="icons/phone_android.svg" alt="" class="icon-svg" aria-hidden="true">
-                        </div>
-                        <h3>GpxAnalyzer — Ongoing Development</h3>
-                        <ul>
-                            <li>17-module clean architecture with 1,119+ unit tests</li>
-                            <li>Custom DSP pipeline: wavelet denoising, FFT, adaptive windowing</li>
-                            <li>Strava OAuth2 integration with smart rate limiting</li>
-                            <li>Full CI/CD via GitHub Actions — automated testing and release</li>
-                            <li><a href="https://play.google.com/store/apps/details?id=com.rafalstanczuk.gpxanalyzer" target="_blank" rel="noopener">Live on Google Play</a></li>
                         </ul>
                     </div>
                 </div>
