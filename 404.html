@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found – Rafal Stanczuk</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0f1512">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .nf { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem 1rem; }
+        .nf-card { max-width: 32rem; }
+        .nf-code { font-size: clamp(3rem, 12vw, 6rem); font-weight: 700; line-height: 1; color: var(--md-sys-color-primary); letter-spacing: -0.03em; margin-bottom: 1rem; }
+        .nf h1 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .nf p { color: var(--md-sys-color-on-surface-variant); margin-bottom: 1.5rem; }
+        .nf-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+    </style>
+</head>
+<body>
+    <main class="nf" id="main">
+        <div class="nf-card">
+            <div class="app-icon-large">
+                <picture>
+                    <source type="image/webp" srcset="/developer-icon-120.webp 1x, /developer-icon-240.webp 2x">
+                    <img src="/developer-icon-240.png" srcset="/developer-icon-120.png 1x, /developer-icon-240.png 2x" alt="" class="app-icon-img" width="120" height="120">
+                </picture>
+            </div>
+            <div class="nf-code" aria-hidden="true">404</div>
+            <h1>Page not found</h1>
+            <p>The page you are looking for does not exist or has moved. Everything about Rafał Stańczuk – Senior Android Engineer – lives on the home page.</p>
+            <nav class="nf-links" aria-label="Where to go next">
+                <a href="/" class="hero-cta-link hero-cta-email">Go to the home page</a>
+                <a href="/#projects" class="hero-cta-link hero-cta-email">Featured projects</a>
+                <a href="/#contact" class="hero-cta-link hero-cta-email">Contact</a>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,9 +3,15 @@
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
@@ -135,20 +141,24 @@ function loadRecommendations() {
                     currentGrid.className = 'rec-group-grid';
                     container.appendChild(currentGrid);
                 } else {
-                    // Image file
+                    // Image file, optionally followed by "WIDTHxHEIGHT" (reserves space, avoids layout shift)
+                    const [fileName, dims] = trimmed.split(/\s+/);
                     const fileIndex = allFiles.length;
-                    allFiles.push(trimmed);
+                    allFiles.push(fileName);
 
                     const card = document.createElement('div');
                     card.className = 'rec-card fade-in-up';
                     card.setAttribute('role', 'button');
                     card.setAttribute('tabindex', '0');
-                    card.setAttribute('aria-label', `${currentGroup || 'Recommendation'} — ${fileIndex + 1}`);
+                    card.setAttribute('aria-label', `LinkedIn recommendation ${fileIndex + 1} (${currentGroup || 'Recommendation'}) — open full size`);
 
                     const img = document.createElement('img');
-                    img.src = `recommendations/${trimmed}`;
-                    img.alt = `LinkedIn recommendation from ${currentGroup || 'colleague'}`;
+                    img.src = `recommendations/${fileName}`;
+                    img.alt = `LinkedIn recommendation ${fileIndex + 1} for Rafal Stanczuk (${currentGroup || 'colleague'})`;
                     img.loading = 'lazy';
+                    img.decoding = 'async';
+                    const m = dims && /^(\d+)x(\d+)$/.exec(dims);
+                    if (m) { img.width = Number(m[1]); img.height = Number(m[2]); }
 
                     card.appendChild(img);
                     card.addEventListener('click', () => openRecLightbox(fileIndex));

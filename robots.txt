@@ -1,8 +1,18 @@
-# robots.txt - Rafal Stanczuk Portfolio
-# Search engines allowed. AI training and scraping prohibited.
+# robots.txt - Rafal Stanczuk Portfolio (https://stanczuk.it/)
+# Search engines and link-preview bots allowed. AI training and scraping prohibited.
 
 # Allow major search engines
 User-agent: Googlebot
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Google-InspectionTool
 Allow: /
 Disallow: /local/
 Disallow: /work/
@@ -23,6 +33,54 @@ Disallow: /local/
 Disallow: /work/
 
 User-agent: Slurp
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+# Allow social link-preview bots (rich link cards on LinkedIn, X, Facebook,
+# Slack, Discord, WhatsApp, Telegram). These fetch only the shared URL and
+# its Open Graph tags; they are not AI-training crawlers.
+User-agent: LinkedInBot
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Twitterbot
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Discordbot
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: WhatsApp
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: TelegramBot
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: Slack-ImgProxy
+Allow: /
+Disallow: /local/
+Disallow: /work/
+
+User-agent: BingPreview
 Allow: /
 Disallow: /local/
 Disallow: /work/
@@ -110,5 +168,5 @@ Disallow: /
 User-agent: *
 Disallow: /
 
-# Sitemap
-Sitemap: https://rafalstanczuk.github.io/rafalstanczuk/sitemap.xml
+# Sitemap (canonical host)
+Sitemap: https://stanczuk.it/sitemap.xml

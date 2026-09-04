@@ -1,13 +1,13 @@
 ## Colleagues
-colleague_ios_ml_engineer_2024.png
-colleague_senior_ios_dev_2024.png
-colleague_android_engineer_2018.png
-colleague_it_expert_2018.png
+colleague_ios_ml_engineer_2024.png 676x296
+colleague_senior_ios_dev_2024.png 672x344
+colleague_android_engineer_2018.png 675x161
+colleague_it_expert_2018.png 673x141
 
 ## Managers & Clients
-manager_senior_po_inelo_2018.png
-client_rd_team_manager_2020.png
+manager_senior_po_inelo_2018.png 676x284
+client_rd_team_manager_2020.png 674x158
 
 ## Mentorship
-mentee_angular_developer_2025.png
-recruiter_talent_acquisition_2018.png
+mentee_angular_developer_2025.png 505x753
+recruiter_talent_acquisition_2018.png 681x158
